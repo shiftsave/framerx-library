@@ -24,6 +24,8 @@ interface ButtonProps {
      * upon click which is the default behavior for a button.
      */
     type?: string;
+    color: "peachpuff" | "cadetblue";
+    headingText?: string;
 }
 export declare class Button extends React.Component<ButtonProps> {
     static defaultProps: {
@@ -36,6 +38,8 @@ export declare class Button extends React.Component<ButtonProps> {
         disabled: boolean;
         loading: boolean;
         type: string;
+        color: string;
+        headingText: string;
     };
     render(): JSX.Element;
 }
