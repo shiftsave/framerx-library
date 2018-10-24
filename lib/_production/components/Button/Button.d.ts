@@ -27,7 +27,7 @@ interface ButtonProps {
     color: "peachpuff" | "cadetblue";
     headingText?: string;
 }
-export declare class Button extends React.Component<ButtonProps> {
+export declare class PMButton extends React.Component<ButtonProps> {
     static defaultProps: {
         size: SIZE_OPTIONS;
         buttonType: string;

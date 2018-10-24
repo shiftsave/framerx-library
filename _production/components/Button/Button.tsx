@@ -1,6 +1,7 @@
 import * as React from "react";
 import classNames from "classnames";
 import { SIZE_OPTIONS } from "../../constants/ui-constants";
+import Button from "@material-ui/core/Button";
 
 import "./button.less";
 
@@ -51,7 +52,7 @@ interface ButtonProps {
   headingText?: string;
 }
 
-export class Button extends React.Component<ButtonProps> {
+export class PMButton extends React.Component<ButtonProps> {
   static defaultProps = {
     size: SIZE_OPTIONS.MEDIUM,
     buttonType: "default",
@@ -81,32 +82,6 @@ export class Button extends React.Component<ButtonProps> {
       ...other
     } = this.props;
 
-    return (
-      <div>
-        <h1 style={{ color: this.props.color }}>{this.props.headingText}</h1>
-        <button
-          className={classNames(
-            "ui_form_button",
-            `ui_form_button--${size}`,
-            `ui_form_button--${buttonType}`,
-            {
-              "ui_form_button--borderless": borderless,
-              "ui_form_button--knockout": borderless === "knockout",
-              "ui_form_button--naked": borderless === "naked",
-              "ui_form_button--is-full-width": fullWidth,
-              "ui_form_button--is-left-lockup": isLeftLockup,
-              "ui_form_button--is-right-lockup": isRightLockup,
-              "ui_form_button--is-disabled": disabled || loading
-            },
-            className
-          )}
-          type={type}
-          disabled={disabled && true}
-          {...other}
-        >
-          {children}
-        </button>
-      </div>
-    );
+    return <Button>dude wtf</Button>;
   }
 }
