@@ -1,6 +1,6 @@
 import * as React from "react";
 import { PropertyControls, ControlType } from "framer";
-import { Button as _Button } from "../lib";
+import { PMButton as _Button } from "../lib";
 
 enum SIZE_OPTIONS {
   EXTRA_SMALL = "xs",
