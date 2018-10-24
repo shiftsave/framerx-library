@@ -1,5 +1,7 @@
 import * as React from "react";
 import Button from "@material-ui/core/Button";
+import theme from "../../theme";
+import { MuiThemeProvider } from "@material-ui/core/styles";
 
 interface ButtonProps {
   text: string;
@@ -8,7 +10,7 @@ interface ButtonProps {
 
   color?: "primary" | "secondary";
 
-  variant?: "text" | "flat" | "outlined" | "contained" | "raised" | "fab";
+  variant?: "text" | "outlined" | "contained" | "fab";
 
   disabled?: true | false;
 }
@@ -25,9 +27,11 @@ export class PMButton extends React.Component<ButtonProps> {
     const { disabled, color, text, variant } = this.props;
 
     return (
-      <Button disabled={disabled} color={color} variant={variant}>
-        {text}
-      </Button>
+      <MuiThemeProvider theme={theme}>
+        <Button disabled={disabled} color={color} variant={variant}>
+          {text}
+        </Button>
+      </MuiThemeProvider>
     );
   }
 }

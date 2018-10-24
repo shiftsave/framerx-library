@@ -28,16 +28,16 @@ export class Button extends React.Component<Props> {
     color: {
       type: ControlType.SegmentedEnum,
       options: ["primary", "secondary"],
-      title: "hi roque"
+      title: "Color"
     },
     variant: {
       type: ControlType.Enum,
-      options: ["text", "flat", "outlined", "contained", "raised", "fab"],
+      options: ["text", "outlined", "contained", "fab"],
       title: "Variant"
     },
     disabled: {
       type: ControlType.Boolean,
-      title: "Disabled?"
+      title: "Disabled"
     }
   };
 
