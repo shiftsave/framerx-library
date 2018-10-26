@@ -15,7 +15,7 @@ interface Props {
   height: number;
 }
 
-export class Button extends React.Component<Props> {
+export class TextField extends React.Component<Props> {
   // Set default properties
   static defaultProps = {
     label: "label",
