@@ -45,5 +45,7 @@
   },
   "author": "Datadog DesignOps Team <slack@#designops>",
   "license": "UNLICENSED",
-  "dependencies": {}
+  "dependencies": {
+    "@types/material-ui": "^0.21.5"
+  }
 }
