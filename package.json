@@ -22,6 +22,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.0.0-rc.3",
     "@babel/preset-env": "^7.0.0-beta.51",
     "@babel/preset-react": "^7.0.0-rc.2",
+    "@material-ui/core": "^3.3.0",
     "@types/react": "16.4.7",
     "awesome-typescript-loader": "^5.2.0",
     "babel-eslint": "^8.0.3",
@@ -34,7 +35,8 @@
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     "prop-types": "15.6.0",
-    "react": "15.6.1",
+    "react": "~16.4.0",
+    "react-dom": "~16.4.0",
     "style-loader": "^0.23.0",
     "typescript": "2.x",
     "uglifyjs-webpack-plugin": "^1.2.7",
@@ -44,7 +46,6 @@
   "author": "Datadog DesignOps Team <slack@#designops>",
   "license": "UNLICENSED",
   "dependencies": {
-    "@types/classnames": "^2.2.6",
-    "classnames": "^2.2.6"
+    "@types/material-ui": "^0.21.5"
   }
 }
